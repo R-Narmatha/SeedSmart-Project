@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "678232736967",
+    "project_id": "seedsmart-99113",
+    "storage_bucket": "seedsmart-99113.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678232736967:android:7862b7bcc0533fbeb26ae2",
+        "android_client_info": {
+          "package_name": "com.example.seedsmartapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8y-GDMO7q7pPMmf0K_xvKgEA3mV9M5aI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

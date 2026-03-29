@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/farm1_bg"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="start">
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="←"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="start"
+            android:padding="0dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"/>
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Soil and Weather Data 🌾"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="times"
+            android:textColor="#2E7D32"
+            android:gravity="center"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="8dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- N -->
+                <EditText
+                    android:id="@+id/etNitrogen"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Nitrogen (N)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- P -->
+                <EditText
+                    android:id="@+id/etPhosphorus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Phosphorus (P)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- K -->
+                <EditText
+                    android:id="@+id/etPotassium"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Potassium (K)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- Temperature -->
+                <EditText
+                    android:id="@+id/etTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Temperature (°C)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- Humidity -->
+                <EditText
+                    android:id="@+id/etHumidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Humidity (%)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- pH -->
+                <EditText
+                    android:id="@+id/etPH"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Soil pH"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- Rainfall -->
+                <EditText
+                    android:id="@+id/etRainfall"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Rainfall (mm)"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="16dp"
+                    android:textColorHint="#888888"/>
+
+                <!-- Predict Button -->
+                <Button
+                    android:id="@+id/btnPredict"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Predict Crop 🌱"
+                    android:textAllCaps="false"
+                    android:textStyle="bold|italic"
+                    android:fontFamily="times"
+                    android:backgroundTint="#66BB6A"
+                    android:textColor="#ffffff"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
